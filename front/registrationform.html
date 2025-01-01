@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <form action="http://localhost:8080/add/students" method="post">
+        <h1>Registration form</h1>
+        <label for="name">Enter a Name:</label>
+        <input type="text" name="name">
+
+        <label for="emailid">Enter a EmailId:</label>
+        <input type="email" name="emailId">
+
+        <label for="con-number">Enter a Contact Number:</label>
+        <input type="text" name="contactNumber">
+
+        <label for="course">Select the Course:</label>
+        <select name="courseName">
+            <option value=""></option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="SpringBoot">Spring Boot</option>
+            <option value="C">C</option>
+        </select>
+
+        <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
